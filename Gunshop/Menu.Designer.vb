@@ -150,7 +150,7 @@ Partial Class frmMain
         ' PictureBox3
         ' 
         PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(476, 72)
+        PictureBox3.Location = New Point(431, 72)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(198, 111)
         PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
@@ -160,7 +160,7 @@ Partial Class frmMain
         ' PictureBox4
         ' 
         PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(197, 219)
+        PictureBox4.Location = New Point(860, 72)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(198, 111)
         PictureBox4.SizeMode = PictureBoxSizeMode.CenterImage
@@ -170,7 +170,7 @@ Partial Class frmMain
         ' PictureBox5
         ' 
         PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
-        PictureBox5.Location = New Point(337, 357)
+        PictureBox5.Location = New Point(192, 290)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(203, 135)
         PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
@@ -180,7 +180,7 @@ Partial Class frmMain
         ' PictureBox6
         ' 
         PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
-        PictureBox6.Location = New Point(476, 219)
+        PictureBox6.Location = New Point(647, 72)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(198, 111)
         PictureBox6.SizeMode = PictureBoxSizeMode.CenterImage
@@ -190,7 +190,7 @@ Partial Class frmMain
         ' PictureBox7
         ' 
         PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
-        PictureBox7.Location = New Point(758, 23)
+        PictureBox7.Location = New Point(431, 246)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(198, 230)
         PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
@@ -200,7 +200,7 @@ Partial Class frmMain
         ' PictureBox8
         ' 
         PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
-        PictureBox8.Location = New Point(758, 273)
+        PictureBox8.Location = New Point(647, 246)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(198, 230)
         PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
