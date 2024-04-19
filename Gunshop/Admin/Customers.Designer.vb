@@ -23,13 +23,13 @@ Partial Class Customers
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         TableLayoutPanel1 = New TableLayoutPanel()
-        Label1 = New Label()
-        Label2 = New Label()
-        Label3 = New Label()
-        Label4 = New Label()
-        Label5 = New Label()
-        Label6 = New Label()
         Label7 = New Label()
+        Label3 = New Label()
+        Label6 = New Label()
+        Label1 = New Label()
+        Label5 = New Label()
+        Label2 = New Label()
+        Label4 = New Label()
         TableLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -61,25 +61,15 @@ Partial Class Customers
         TableLayoutPanel1.Size = New Size(870, 100)
         TableLayoutPanel1.TabIndex = 0
         ' 
-        ' Label1
+        ' Label7
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Rockwell", 12F, FontStyle.Bold)
-        Label1.Location = New Point(4, 1)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(106, 19)
-        Label1.TabIndex = 1
-        Label1.Text = "CustomerID"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Rockwell", 12F, FontStyle.Bold)
-        Label2.Location = New Point(123, 1)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(138, 19)
-        Label2.TabIndex = 2
-        Label2.Text = "Customer Name"
+        Label7.AutoSize = True
+        Label7.Font = New Font("Rockwell", 12F, FontStyle.Bold)
+        Label7.Location = New Point(730, 1)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(136, 19)
+        Label7.TabIndex = 7
+        Label7.Text = "Date Registered"
         ' 
         ' Label3
         ' 
@@ -92,15 +82,25 @@ Partial Class Customers
         Label3.Text = "Account Name"
         Label3.TextAlign = ContentAlignment.TopCenter
         ' 
-        ' Label4
+        ' Label6
         ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Rockwell", 12F, FontStyle.Bold)
-        Label4.Location = New Point(442, 1)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(46, 19)
-        Label4.TabIndex = 4
-        Label4.Text = "Item"
+        Label6.AutoSize = True
+        Label6.Font = New Font("Rockwell", 12F, FontStyle.Bold)
+        Label6.Location = New Point(630, 1)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(71, 19)
+        Label6.TabIndex = 6
+        Label6.Text = "Contact"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Rockwell", 12F, FontStyle.Bold)
+        Label1.Location = New Point(4, 1)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(106, 19)
+        Label1.TabIndex = 1
+        Label1.Text = "CustomerID"
         ' 
         ' Label5
         ' 
@@ -112,25 +112,25 @@ Partial Class Customers
         Label5.TabIndex = 5
         Label5.Text = "Quantity"
         ' 
-        ' Label6
+        ' Label2
         ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Rockwell", 12F, FontStyle.Bold)
-        Label6.Location = New Point(630, 1)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(71, 19)
-        Label6.TabIndex = 6
-        Label6.Text = "Contact"
+        Label2.AutoSize = True
+        Label2.Font = New Font("Rockwell", 12F, FontStyle.Bold)
+        Label2.Location = New Point(123, 1)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(138, 19)
+        Label2.TabIndex = 2
+        Label2.Text = "Customer Name"
         ' 
-        ' Label7
+        ' Label4
         ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Rockwell", 12F, FontStyle.Bold)
-        Label7.Location = New Point(730, 1)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(136, 19)
-        Label7.TabIndex = 7
-        Label7.Text = "Date Registered"
+        Label4.AutoSize = True
+        Label4.Font = New Font("Rockwell", 12F, FontStyle.Bold)
+        Label4.Location = New Point(442, 1)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(46, 19)
+        Label4.TabIndex = 4
+        Label4.Text = "Item"
         ' 
         ' Customers
         ' 
