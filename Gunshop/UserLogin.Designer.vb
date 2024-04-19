@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Login
+Partial Class UserLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,17 +22,17 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserLogin))
         Panel1 = New Panel()
         PictureBox1 = New PictureBox()
-        Button1 = New Button()
+        login_btn = New Button()
         Button2 = New Button()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
+        username = New TextBox()
+        password = New TextBox()
         PictureBox2 = New PictureBox()
         PictureBox3 = New PictureBox()
         Label1 = New Label()
-        LinkLabel1 = New LinkLabel()
+        adminlink = New LinkLabel()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -59,17 +59,17 @@ Partial Class Login
         PictureBox1.TabIndex = 2
         PictureBox1.TabStop = False
         ' 
-        ' Button1
+        ' login_btn
         ' 
-        Button1.BackColor = SystemColors.AppWorkspace
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Location = New Point(513, 301)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(186, 28)
-        Button1.TabIndex = 2
-        Button1.Text = "Login"
-        Button1.UseVisualStyleBackColor = False
+        login_btn.BackColor = SystemColors.AppWorkspace
+        login_btn.FlatAppearance.BorderSize = 0
+        login_btn.FlatStyle = FlatStyle.Flat
+        login_btn.Location = New Point(513, 301)
+        login_btn.Name = "login_btn"
+        login_btn.Size = New Size(186, 28)
+        login_btn.TabIndex = 2
+        login_btn.Text = "Login"
+        login_btn.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
@@ -83,21 +83,21 @@ Partial Class Login
         Button2.Text = "Cancel"
         Button2.UseVisualStyleBackColor = False
         ' 
-        ' TextBox2
+        ' username
         ' 
-        TextBox2.Location = New Point(481, 166)
-        TextBox2.Name = "TextBox2"
-        TextBox2.PlaceholderText = "Username"
-        TextBox2.Size = New Size(251, 23)
-        TextBox2.TabIndex = 4
+        username.Location = New Point(481, 166)
+        username.Name = "username"
+        username.PlaceholderText = "Username"
+        username.Size = New Size(251, 23)
+        username.TabIndex = 4
         ' 
-        ' TextBox3
+        ' password
         ' 
-        TextBox3.Location = New Point(481, 210)
-        TextBox3.Name = "TextBox3"
-        TextBox3.PlaceholderText = "Password"
-        TextBox3.Size = New Size(251, 23)
-        TextBox3.TabIndex = 5
+        password.Location = New Point(481, 210)
+        password.Name = "password"
+        password.PlaceholderText = "Password"
+        password.Size = New Size(251, 23)
+        password.TabIndex = 5
         ' 
         ' PictureBox2
         ' 
@@ -129,32 +129,32 @@ Partial Class Login
         Label1.TabIndex = 8
         Label1.Text = "USER LOGIN"
         ' 
-        ' LinkLabel1
+        ' adminlink
         ' 
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Location = New Point(557, 385)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(95, 15)
-        LinkLabel1.TabIndex = 9
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Login as Admin?"
+        adminlink.AutoSize = True
+        adminlink.Location = New Point(557, 385)
+        adminlink.Name = "adminlink"
+        adminlink.Size = New Size(95, 15)
+        adminlink.TabIndex = 9
+        adminlink.TabStop = True
+        adminlink.Text = "Login as Admin?"
         ' 
-        ' Login
+        ' UserLogin
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Gold
         ClientSize = New Size(800, 450)
-        Controls.Add(LinkLabel1)
+        Controls.Add(adminlink)
         Controls.Add(Label1)
         Controls.Add(PictureBox3)
         Controls.Add(PictureBox2)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
+        Controls.Add(password)
+        Controls.Add(username)
         Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(login_btn)
         Controls.Add(Panel1)
-        Name = "Login"
+        Name = "UserLogin"
         Text = "Login"
         Panel1.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -166,12 +166,12 @@ Partial Class Login
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents login_btn As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents username As TextBox
+    Friend WithEvents password As TextBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents adminlink As LinkLabel
 End Class
