@@ -1,4 +1,12 @@
-﻿Public Class UserMain
+﻿Imports Gunshop.UserLogin
+
+Public Class UserMain
+    Private _userInfo As UserInfo
+
+    Public Sub New(userInfo As UserInfo)
+        InitializeComponent()
+        _userInfo = userInfo
+    End Sub
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Show the default panel (ShopForm) when the MainForm is loaded
         ShowShopSection()
@@ -15,22 +23,40 @@
     End Sub
 
     Private Sub ShowShopSection()
-        ' Show the purchases section content
-        ' Example:
-        Dim Shop As New Shop()
-        ShowContentForm(Shop)
+        ' Check if user information is available in UserMain form
+        If _userInfo IsNot Nothing Then
+            ' Pass the user information to the Account form constructor
+            Dim Shop As New Shop(_userInfo)
+            ' Show the Account form
+            ShowContentForm(Shop)
+        Else
+            ' Handle case where user information is not available
+            MessageBox.Show("User information not available. Please log in.")
+        End If
     End Sub
     Private Sub ShowPurchasesSection()
-        ' Show the purchases section content
-        ' Example:
-        Dim Purchases As New Purchases()
-        ShowContentForm(purchases)
+        ' Check if user information is available in UserMain form
+        If _userInfo IsNot Nothing Then
+            ' Pass the user information to the Account form constructor
+            Dim Shop As New Purchases(_userInfo)
+            ' Show the Account form
+            ShowContentForm(Shop)
+        Else
+            ' Handle case where user information is not available
+            MessageBox.Show("User information not available. Please log in.")
+        End If
     End Sub
     Private Sub ShowAccountSection()
-        ' Show the account section content
-        ' Example:
-        Dim Account As New Account()
-        ShowContentForm(Account)
+        ' Check if user information is available in UserMain form
+        If _userInfo IsNot Nothing Then
+            ' Pass the user information to the Account form constructor
+            Dim accountForm As New Account(_userInfo)
+            ' Show the Account form
+            ShowContentForm(accountForm)
+        Else
+            ' Handle case where user information is not available
+            MessageBox.Show("User information not available. Please log in.")
+        End If
     End Sub
 
     Private Sub Logout_Click(sender As Object, e As EventArgs) Handles logout.Click

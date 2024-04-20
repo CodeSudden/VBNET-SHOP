@@ -1,4 +1,7 @@
 ﻿Public Class AdminLogin
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        password.UseSystemPasswordChar = True
+    End Sub
 
     Private Sub Login_btn_Click(sender As Object, e As EventArgs) Handles login_btn.Click
         Dim username As String = Me.username.Text
@@ -18,5 +21,13 @@
         Dim userlogin As New UserLogin()
         userlogin.Show()
         Me.Hide() ' Hide the MainForm when opening the AdminLoginForm
+    End Sub
+
+    Private Sub AdminLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Application.Exit()
     End Sub
 End Class

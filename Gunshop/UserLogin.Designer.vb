@@ -33,6 +33,8 @@ Partial Class UserLogin
         PictureBox3 = New PictureBox()
         Label1 = New Label()
         adminlink = New LinkLabel()
+        signuplink = New LinkLabel()
+        showPass = New CheckBox()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -64,7 +66,7 @@ Partial Class UserLogin
         login_btn.BackColor = SystemColors.AppWorkspace
         login_btn.FlatAppearance.BorderSize = 0
         login_btn.FlatStyle = FlatStyle.Flat
-        login_btn.Location = New Point(513, 301)
+        login_btn.Location = New Point(505, 276)
         login_btn.Name = "login_btn"
         login_btn.Size = New Size(186, 28)
         login_btn.TabIndex = 2
@@ -76,7 +78,7 @@ Partial Class UserLogin
         Button2.BackColor = Color.Red
         Button2.FlatAppearance.BorderSize = 0
         Button2.FlatStyle = FlatStyle.Flat
-        Button2.Location = New Point(513, 335)
+        Button2.Location = New Point(505, 310)
         Button2.Name = "Button2"
         Button2.Size = New Size(186, 30)
         Button2.TabIndex = 3
@@ -132,12 +134,32 @@ Partial Class UserLogin
         ' adminlink
         ' 
         adminlink.AutoSize = True
-        adminlink.Location = New Point(557, 385)
+        adminlink.Location = New Point(555, 388)
         adminlink.Name = "adminlink"
         adminlink.Size = New Size(95, 15)
         adminlink.TabIndex = 9
         adminlink.TabStop = True
         adminlink.Text = "Login as Admin?"
+        ' 
+        ' signuplink
+        ' 
+        signuplink.AutoSize = True
+        signuplink.Location = New Point(491, 357)
+        signuplink.Name = "signuplink"
+        signuplink.Size = New Size(200, 15)
+        signuplink.TabIndex = 10
+        signuplink.TabStop = True
+        signuplink.Text = "Dont have an Account? Sign Up here"
+        ' 
+        ' showPass
+        ' 
+        showPass.AutoSize = True
+        showPass.Location = New Point(481, 239)
+        showPass.Name = "showPass"
+        showPass.Size = New Size(108, 19)
+        showPass.TabIndex = 11
+        showPass.Text = "Show password"
+        showPass.UseVisualStyleBackColor = True
         ' 
         ' UserLogin
         ' 
@@ -145,6 +167,8 @@ Partial Class UserLogin
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Gold
         ClientSize = New Size(800, 450)
+        Controls.Add(showPass)
+        Controls.Add(signuplink)
         Controls.Add(adminlink)
         Controls.Add(Label1)
         Controls.Add(PictureBox3)
@@ -174,4 +198,6 @@ Partial Class UserLogin
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents adminlink As LinkLabel
+    Friend WithEvents signuplink As LinkLabel
+    Friend WithEvents showPass As CheckBox
 End Class
